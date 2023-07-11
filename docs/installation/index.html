@@ -121,7 +121,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="installation">Installation</h1>
+                <h1 id="2-installation">2. Installation</h1>
 <p>SCI-VCF can be installed in multiple ways!</p>
 <h2 id="online-access">Online access</h2>
 <p>Step 1:  Open the <a href="https://github.com/venkatk89/sum_vcf">SCI-VCF</a> website.</p>
@@ -129,7 +129,7 @@
 <h2 id="rstudio-based-installation">RStudio based installation</h2>
 <h3 id="prerequisites">Prerequisites</h3>
 <ul>
-<li>R (version &gt; 4.2) <a href="https://www.r-project.org/" target="_blank">(link)</a></li>
+<li>R (version &gt; 4.2.3) <a href="https://www.r-project.org/" target="_blank">(link)</a></li>
 <li>RStudio <a href="https://posit.co/products/open-source/rstudio/" target="_blank">(link)</a></li>
 </ul>
 <h3 id="procedure">Procedure</h3>
@@ -171,15 +171,17 @@
 <h3 id="prerequisites_2">Prerequisites</h3>
 <ul>
 <li>Docker <a href="https://docs.docker.com/get-docker/" target="_blank">(link)</a>.</li>
-<li>Command Line Interface</li>
+<li>Web Browser</li>
+<li>Sudo privelleges</li>
 </ul>
 <p><strong>Step 1: Get the SCI-VCF image from Docker Hub and run it</strong></p>
-<pre><code>sudo docker run -d --rm -p 3000:3000 venkatk89/sci-vcf
+<pre><code>sudo docker run -it --rm -p 3000:3000 venkatk89/sci-vcf
 </code></pre>
 <p><strong>Step 2: Open SCI-VCF via browser using the address below:</strong></p>
 <blockquote>
 <p>http://0.0.0.0:3000/</p>
 </blockquote>
+<p><em>Note: The docker command in step 1 is to run the container interactively, which makes SCI-VCF inactive when the terminal is exited. Docker containers can also be run detached from the terminal as a backend job. When the docker image is run this way, SCI-VCF will always stay active at the link mentioned in Step 2. More information is available in the <a href="../faq/">FAQ</a> section.</em></p>
               
             </div>
           </div><footer>

@@ -1,4 +1,4 @@
-# Installation
+# 2. Installation
 
 
 SCI-VCF can be installed in multiple ways!
@@ -16,7 +16,7 @@ Step 1:  Open the [SCI-VCF](https://github.com/venkatk89/sum_vcf) website.
 
 ### Prerequisites
 
-+ R (version > 4.2) <a href="https://www.r-project.org/" target="_blank">(link)</a>
++ R (version > 4.2.3) <a href="https://www.r-project.org/" target="_blank">(link)</a>
 + RStudio <a href="https://posit.co/products/open-source/rstudio/" target="_blank">(link)</a>
  
 ### Procedure
@@ -87,13 +87,17 @@ Step 5: Launch SCI-VCF by clicking the ```Run App``` button.
 ### Prerequisites
 
 + Docker <a href="https://docs.docker.com/get-docker/" target="_blank">(link)</a>.
-+ Command Line Interface
++ Web Browser
++ Sudo privelleges
 
 **Step 1: Get the SCI-VCF image from Docker Hub and run it**
 ```
-sudo docker run -d --rm -p 3000:3000 venkatk89/sci-vcf
+sudo docker run -it --rm -p 3000:3000 venkatk89/sci-vcf
 ```
 
 **Step 2: Open SCI-VCF via browser using the address below:**
 
 > http://0.0.0.0:3000/
+
+
+*Note: The docker command in step 1 is to run the container interactively, which makes SCI-VCF inactive when the terminal is exited. Docker containers can also be run detached from the terminal as a backend job. When the docker image is run this way, SCI-VCF will always stay active at the link mentioned in Step 2. More information is available in the [FAQ](faq.md) section.*
