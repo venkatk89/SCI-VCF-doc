@@ -33,9 +33,32 @@ sudo docker run -d --rm -p 3000:3000 venkatk89/sci-vcf
 ```
 Now, SCI-VCF will always be active at ```http://0.0.0.0:3000/```
 
+**5) How to solve ‘docker: Got permission denied while trying to connect to the Docker daemon socket at unix’ error while installing SCI-VCF with Docker?**
+
+Add your user to the ```docker``` group
+
+```
+sudo usermod -a -G docker username
+```
+
+If the issue still persist, the socket file can be made available to everyone instead of just the users in the ```docker``` group.
+
+```
+sudo chmod 666 /var/run/docker.sock
+```
+
+
+**6) How to solve ‘xhost: unable to open display “:0”’ while Docker installation of SCI-VCF?**
+```
+xhost local:docker
+```
+
+
 ## Customization
 
-**5) How to increase the default upload size?**
+**7) How to increase the default upload size?**
+
+*Note: File upload size cannot be altered in the online version of SCI-VCF. It can only be done in the local/remote installation/deployments.*
 
 Open ```R/global.R``` file in RStudio. Go to Line #20
 ```
@@ -44,7 +67,7 @@ options(shiny.maxRequestSize = 1 * 1024^3)
 ```
 Edit the upoad file size according to your requirement.
 
-**6) How to change default file processing steps?**
+**8) How to change default file processing steps?**
 Open ```R/summarize_vcf.R```. Go to Line #4
 ```
 break_multiallelic_sites = TRUE, remove_duplicated_entries = TRUE

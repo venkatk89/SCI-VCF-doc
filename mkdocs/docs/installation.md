@@ -1,11 +1,11 @@
-# 2. Installation
+# Installation for personal use
 
 
-SCI-VCF can be installed in multiple ways!
+SCI-VCF can be installed locally, in multiple ways!
 
 ## Online access
 
-Step 1:  Open the [SCI-VCF](https://github.com/venkatk89/sum_vcf) website.
+Step 1:  Open the [SCI-VCF](https://ibse.shinyapps.io/sci-vcf-online/) website.
 
 
 *Note: Online version of SCI-VCF comes with upload size limitations. To get the full functionalities of SCI-VCF, use a local/server installation of the tool.*
@@ -72,9 +72,9 @@ conda env create -f conda/SCI-VCF_conda_env.yaml
 conda activate SCI-VCF
 ```
 
-**Step 5: Open ```global.R``` in RStudio**
+**Step 5: Open ```global.R``` from the ```R``` directory in RStudio**
 ```
-rstudio global.R
+rstudio R/global.R
 ```
 
 Step 5: Launch SCI-VCF by clicking the ```Run App``` button.
