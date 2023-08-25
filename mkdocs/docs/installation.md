@@ -23,7 +23,7 @@ Step 1:  Open the [SCI-VCF](https://ibse.shinyapps.io/sci-vcf-online/) website.
 
 **Step 1: Get the SCI-VCF repository from GitHub.** 
 
-You can download the zipped version of the repo at this <a href="https://github.com/venkatk89/SCI-VCF" target="_blank">link</a>
+You can download the zipped version of the repo at this <a href="https://github.com/HimanshuLab/SCI-VCF" target="_blank">link</a>
 
 ![github_download_image](img/github_zip_download.png)
 
@@ -54,7 +54,7 @@ Open the folder named ```R```. Open ```global.R``` with RStudio and click the ``
 
 **Step 1: Get the SCI-VCF repository from GitHub**
 ```
-git clone https://github.com/venkatk89/SCI-VCF
+git clone https://github.com/HimanshuLab/SCI-VCF
 ```
 
 **Step 2: Open the SCI-VCF directory**

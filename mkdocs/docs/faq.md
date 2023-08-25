@@ -3,12 +3,12 @@
 ## General
 **1) Where can I access the latest SCI-VCF source code?**
 
-You can access the source code via Github <a href="https://github.com/venkatk89/SCI-VCF" target="_blank">link.</a>
+You can access the source code via Github <a href="https://github.com/HimanshuLab/SCI-VCF" target="_blank">link.</a>
 
 
 **2) How can I report bugs and suggest improvements in SCI-VCF?**
 
-You can post your bugs and suggestions <a href="https://github.com/venkatk89/SCI-VCF/issues" target="_blank">here.</a>
+You can post your bugs and suggestions <a href="https://github.com/HimanshuLab/SCI-VCF/issues" target="_blank">here.</a>
 
 ## Installation
 

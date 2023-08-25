@@ -3,6 +3,7 @@ nav:
     - Home: index.md
     - About: about.md
     - Installation: installation.md
+    - Deployment: deployment.md
     - Getting Started: get_started.md
     - Gallery: gallery.md
     - FAQ: faq.md

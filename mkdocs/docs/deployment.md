@@ -95,7 +95,7 @@ cd /srv/shiny-server/
 
 **Get SCI-VCF**
 ```
-sudo git clone https://github.com/venkatk89/SCI-VCF
+sudo git clone https://github.com/HimanshuLab/SCI-VCF
 ```
 
 
